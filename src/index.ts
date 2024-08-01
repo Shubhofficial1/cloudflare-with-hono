@@ -7,7 +7,7 @@ app.use(async (c, next) => {
     // Do validation
     await next();
   } else {
-    return c.text("You dont have acces");
+    return c.text("You dont have access");
   }
 });
 
