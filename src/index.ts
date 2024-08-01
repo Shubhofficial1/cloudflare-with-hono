@@ -2,7 +2,7 @@ import { Hono } from "hono";
 
 const app = new Hono();
 
-app.get("c", (c) => {
+app.get("/", (c) => {
   return c.text("Hello Cloudflare workers");
 });
 
